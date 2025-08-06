@@ -11,5 +11,12 @@ pip install -r requirements.txt
 flask run
 ```
 
-The application expects a MySQL database. Configure the connection string with the `DATABASE_URL` environment variable.
-Example: `mysql+pymysql://user:password@localhost/partie`
+Copy the root `.env.example` to `.env` and provide your MySQL connection
+details. The application reads the following variables:
+
+```
+DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME, JWT_SECRET_KEY
+```
+
+Alternatively, you may supply `DATABASE_URL` to override the constructed
+connection string.

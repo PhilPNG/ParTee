@@ -6,14 +6,20 @@ Starter project for the ParTee mobile app.
 
 - `backend/` – Flask API
 - `frontend/` – React Native app (Expo)
-- `docker-compose.yml` – development stack with MySQL and backend
 
 ## Getting Started
 
 ### Backend & Database
 
+1. Copy `.env.example` to `.env` and update the MySQL connection settings.
+2. Create a virtual environment and install dependencies:
+
 ```bash
-docker-compose up --build
+cd backend
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+flask run
 ```
 
 The API will be available at http://localhost:5000.

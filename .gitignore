@@ -10,5 +10,5 @@ frontend/node_modules/
 npm-debug.log
 
 # Others
-.env
 .DS_Store
+.env
